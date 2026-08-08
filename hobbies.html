@@ -7,7 +7,9 @@
   <meta name="theme-color" content="#0b0e12">
   <title>Visual Work — Jayesh Jadhav</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="single-screen.css">
   <script defer src="app.js"></script>
+  <script defer src="single-screen.js"></script>
 </head>
 <body data-page="visual">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,88 +23,65 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="page-hero shell visual-hero">
-      <div>
-        <p class="eyebrow">Photography · Fine art · Swimming</p>
-        <h1>Visual work<br>&amp; life</h1>
+  <main id="main" class="screen-main">
+    <section class="shell screen-board" aria-labelledby="visual-title">
+      <div class="screen-heading">
+        <div class="screen-heading-left"><p class="eyebrow">03 / Photography · fine art · swimming</p><h1 id="visual-title">Visual work &amp; life</h1></div>
+        <div class="screen-heading-copy"><p>Photography and drawing are a parallel visual practice shaped by light, geometry, movement and observation.</p></div>
       </div>
-      <div class="page-hero-copy">
-        <p>Photography and drawing are a parallel visual practice shaped by light, geometry, movement and observation.</p>
-      </div>
-    </section>
 
-    <section class="section section-bordered">
-      <div class="shell">
-        <div class="section-title-row"><div><p class="section-index">01 / Photography</p><h2>Selected frames</h2></div><p class="section-note">A compact gallery of photographs already included in the original portfolio.</p></div>
-        <div class="photo-grid" aria-label="Selected photography by Jayesh Jadhav">
-          <figure class="photo-wide"><img loading="eager" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(11).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="eager" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(12).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(10).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM.jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure class="photo-tall"><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(1).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(2).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(3).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(4).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure class="photo-wide"><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(5).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(6).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(7).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(8).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(9).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(13).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(14).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+      <div class="visual-screen-layout">
+        <div class="visual-contact-sheet" aria-label="Photography and personal archive">
+          <div class="photo-contact-grid" aria-label="Selected photography by Jayesh Jadhav">
+            <figure><img loading="eager" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(11).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="eager" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(12).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(10).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM.jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(1).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(2).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(3).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(4).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(5).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(6).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(7).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(8).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(9).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(13).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/photography/new/WhatsApp%20Image%202026-08-08%20at%2012.58.04%20PM%20(14).jpeg?v=4" alt="Selected photograph by Jayesh Jadhav"></figure>
+          </div>
+
+          <div class="life-contact-grid" aria-label="Personal moments around research">
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/DSC_7138.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_0801.JPG?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20240825-WA0059.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20241219-WA0013.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20250107-WA0015.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20260111-WA0127.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20260312-WA0112.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_20251004_183450998.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_20260502_214450697_HDR_AE.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_5750.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/91E78180-CC1B-4599-8238-15A84B4D0E9C.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+            <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/Screenshot_20260803-174538.png?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="shell visual-practice-grid">
-        <article>
-          <p class="section-index">02 / Fine art &amp; visual thinking</p>
-          <h2>Drawing, composition &amp; scientific communication</h2>
-          <p>I have participated in drawing competitions and continue to use sketching and digital illustration as tools for visual thinking and scientific communication.</p>
-        </article>
-        <article>
-          <p class="section-index">03 / Movement</p>
-          <h2>Swimming &amp; trekking</h2>
-          <p>Inter-university swimming and trekking provide a counterpoint to long experimental work and remain part of my regular interests.</p>
-        </article>
+        <aside class="visual-side-stack">
+          <article class="visual-mini-panel"><p class="section-index">Fine art &amp; visual thinking</p><h2>Drawing, composition &amp; scientific communication</h2><p>I have participated in drawing competitions and continue to use sketching and digital illustration as tools for visual thinking and scientific communication.</p></article>
+          <article class="visual-mini-panel"><p class="section-index">Movement</p><h2>Swimming &amp; trekking</h2><p>Inter-university swimming and trekking provide a counterpoint to long experimental work and remain part of my regular interests.</p></article>
+          <div class="recognition-compact" aria-label="Creative and sporting highlights">
+            <article><span>2024 · Photography</span><h3>Inter IIT 7.0</h3><p>Placed 5th as a member of the IIT Bombay photography team.</p></article>
+            <article><span>2024 · Photography</span><h3>PG-Cult Photography</h3><p>Won 3rd prize in a PG-Cult photography competition at IIT Bombay.</p></article>
+            <article><span>Fine art</span><h3>National-level Drawing Competitions</h3><p>Recognition through national-level drawing competitions and continued visual-composition practice.</p></article>
+            <article><span>Swimming</span><h3>Inter-university Participation</h3><p>Participated in inter-university swimming alongside the academic and research schedule.</p></article>
+          </div>
+        </aside>
       </div>
-    </section>
 
-    <section class="section section-bordered">
-      <div class="shell">
-        <div class="section-title-row"><div><p class="section-index">04 / Personal archive</p><h2>Small moments around research</h2></div><p class="section-note">Friends, campus, travel, art, swimming and everyday life.</p></div>
-        <div class="life-strip" aria-label="Personal moments">
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/DSC_7138.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_0801.JPG?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20240825-WA0059.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20241219-WA0013.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20250107-WA0015.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20260111-WA0127.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG-20260312-WA0112.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_20251004_183450998.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_20260502_214450697_HDR_AE.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/IMG_5750.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/91E78180-CC1B-4599-8238-15A84B4D0E9C.jpg?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-          <figure><img loading="lazy" src="https://jayeshofphysics.github.io/JayeshJadhav/assets/life/Screenshot_20260803-174538.png?v=7" alt="Personal moment from Jayesh Jadhav's life"></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-title-row"><div><p class="section-index">05 / Recognition</p><h2>Creative &amp; sporting highlights</h2></div></div>
-        <div class="recognition-grid">
-          <article><span>2024 · Photography</span><h3>Inter IIT 7.0</h3><p>Placed 5th as a member of the IIT Bombay photography team during the Inter IIT cultural meet.</p></article>
-          <article><span>2024 · Photography</span><h3>PG-Cult Photography</h3><p>Won 3rd prize in a PG-Cult photography competition at IIT Bombay.</p></article>
-          <article><span>Fine art</span><h3>National-level Drawing Competitions</h3><p>Received recognition through national-level drawing competitions and continued developing sketching and visual-composition skills.</p></article>
-          <article><span>Swimming</span><h3>Inter-university Participation</h3><p>Participated in inter-university swimming while maintaining an active academic and research schedule.</p></article>
-        </div>
-      </div>
+      <div class="screen-bottom-bar"><p class="screen-bottom-note">Selected photography, personal archive, visual practice and recognitions are presented together as one contact sheet.</p></div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-row"><span>© <span data-year></span> Jayesh Janardan Jadhav</span><span>Photography · Fine art · Swimming</span></div></footer>
+  <footer class="site-footer"><div class="shell footer-row"><span>© <span data-year></span> Jayesh Janardan Jadhav</span><span>Photography · fine art · swimming</span></div></footer>
 </body>
 </html>
