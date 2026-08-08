@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="M.Sc. thesis overview by Jayesh Jadhav on the optical design of IZO/Ag/IZO multilayer transparent conducting oxides.">
+  <meta name="theme-color" content="#0b0e12">
+  <title>M.Sc. Thesis — Jayesh Jadhav</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="brand" href="index.html" aria-label="Jayesh Jadhav home"><span class="brand-mark">JJ</span><span class="brand-copy"><strong>Jayesh Jadhav</strong><small>Experimental Physics</small></span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="index.html">About</a><a class="active" href="research.html">Research</a><a href="hobbies.html">Visual Work</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero shell">
+      <a class="back-link" href="research.html">← Back to research</a>
+      <div class="case-hero-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/thesis-optics.svg" alt="Thin-film optics illustration showing light interacting with an IZO silver IZO multilayer"></div>
+      <div class="case-hero-overlay">
+        <p>M.Sc. Physics · IIT Bombay · 2024—2026</p>
+        <h1>Simulation and Optical Design of Multilayer Transparent Conducting Oxides</h1>
+        <div class="case-meta"><span>NCPRE · IIT Bombay</span><span>Thin-film optics</span><span>IZO / Ag / IZO</span></div>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <div class="shell case-layout">
+        <article class="case-content">
+          <section>
+            <p class="section-index">Abstract</p>
+            <p class="case-lead">A fabrication-aware study of IZO/Ag/IZO transparent electrodes for photovoltaic applications, using simulation as a design limit rather than a guarantee of fabricated-device performance.</p>
+            <p>The thesis used SETFOS and Python to explore how layer thickness, ultrathin-silver optical behaviour and electrical constraints interact. The project began in photovoltaics but became increasingly focused on thin-film interference, nanoscale optical constants and light–matter interaction.</p>
+          </section>
+
+          <section>
+            <p class="section-index">Research question</p>
+            <h2>Transparency, conductivity &amp; light</h2>
+            <p>Can an ultrathin metal layer reduce electrical loss while the surrounding oxide layers are tuned to preserve or improve optical transmission?</p>
+            <div class="stack-diagram" aria-label="IZO silver IZO multilayer stack">
+              <div><span>Incident AM1.5G light</span><b>↓</b></div>
+              <div class="layer izo"><strong>IZO</strong><span>45 nm</span></div>
+              <div class="layer ag"><strong>Ag</strong><span>8 nm</span></div>
+              <div class="layer izo"><strong>IZO</strong><span>60 nm or 40 nm</span></div>
+              <div><b>↓</b><span>Transmitted photons</span></div>
+            </div>
+          </section>
+
+          <section>
+            <p class="section-index">Methodology</p>
+            <div class="method-grid">
+              <article><span>01</span><h3>Material inputs</h3><p>Prepared and compared wavelength-dependent optical-constant datasets for IZO and silver, including corrected treatment of ultrathin Ag rather than relying only on bulk values.</p></article>
+              <article><span>02</span><h3>SETFOS sweeps</h3><p>Systematically varied top IZO, silver and bottom IZO thicknesses to identify promising optical stacks.</p></article>
+              <article><span>03</span><h3>Python analysis</h3><p>Calculated transmission, reflection, absorption, photon flux, theoretical current caps and comparative performance metrics.</p></article>
+              <article><span>04</span><h3>Physical interpretation</h3><p>Connected the simulated response to Volmer–Weber island growth, film continuity, wetting-layer effects and localized surface plasmon resonance considerations.</p></article>
+            </div>
+          </section>
+
+          <section>
+            <p class="section-index">Selected results</p>
+            <div class="result-grid">
+              <article><span>300—800 nm</span><h3>IZO 45 / Ag 8 / IZO 60 nm</h3><strong>8.55%</strong><p>Improvement in the theoretical short-circuit-current cap compared with a standard 140 nm IZO layer.</p></article>
+              <article><span>300—1300 nm</span><h3>IZO 45 / Ag 8 / IZO 40 nm</h3><strong>13.06%</strong><p>Simulated transmittance enhancement for a broader tandem-relevant spectral range.</p></article>
+              <article><span>Optical–electrical balance</span><h3>Haacke figure of merit</h3><strong>2—4×</strong><p>Enhancement in the combined transparency–conductivity figure of merit relative to the conventional comparison structure.</p></article>
+            </div>
+            <p class="technical-note">These values are idealised simulation results and should be read as optical design limits, not guaranteed fabricated-device improvements.</p>
+          </section>
+
+          <section>
+            <p class="section-index">Experimental realism</p>
+            <h2>Why fabricated films differ</h2>
+            <div class="method-grid compact-grid">
+              <article><h3>Continuity</h3><p>Sub-10 nm silver can form islands before becoming a continuous conducting film.</p></article>
+              <article><h3>Morphology</h3><p>Roughness, grains and thickness non-uniformity introduce scattering and broaden optical response.</p></article>
+              <article><h3>Interfaces</h3><p>Interfacial diffusion and imperfect boundaries change both electrical and optical behaviour.</p></article>
+              <article><h3>Measured constants</h3><p>Real deposited films may differ from the optical constants assumed in simulation.</p></article>
+            </div>
+          </section>
+        </article>
+
+        <aside class="resource-panel">
+          <h2>Resources</h2>
+          <a href="https://jayeshofphysics.github.io/JayeshJadhav/Assets/ThesisReport.pdf" target="_blank" rel="noopener noreferrer"><span>Thesis PDF</span><b>↗</b></a>
+          <a href="https://jayeshofphysics.github.io/JayeshJadhav/Assets/RESUME.pdf" target="_blank" rel="noopener noreferrer"><span>Research CV</span><b>↗</b></a>
+          <a href="research.html"><span>Research archive</span><b>→</b></a>
+          <a href="contact.html"><span>Discuss this work</span><b>→</b></a>
+          <div class="resource-tags"><span>SETFOS</span><span>Python</span><span>Multilayer optics</span><span>Drude model</span><span>Photon flux</span><span>Haacke FoM</span><span>RF sputtering</span><span>Metal evaporation</span><span>UV–Vis–NIR</span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-row"><span>© <span data-year></span> Jayesh Janardan Jadhav</span><span>M.Sc. Thesis Overview</span></div></footer>
+</body>
+</html>
