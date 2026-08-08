@@ -7,7 +7,9 @@
   <meta name="theme-color" content="#0b0e12">
   <title>Contact — Jayesh Jadhav</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="single-screen.css">
   <script defer src="app.js"></script>
+  <script defer src="single-screen.js"></script>
 </head>
 <body data-page="contact">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,22 +26,13 @@
   <main id="main" class="contact-main">
     <section class="shell contact-layout">
       <div class="contact-information">
-        <p class="eyebrow">Contact &amp; collaboration</p>
+        <p class="eyebrow">04 / Contact &amp; collaboration</p>
         <h1>Get in touch</h1>
         <p class="contact-intro">Research conversations, PhD opportunities and collaborations in photonics, nanofabrication and experimental physics.</p>
 
-        <div class="contact-block">
-          <span>Email</span>
-          <a href="mailto:jayesh10042003@gmail.com">jayesh10042003@gmail.com</a>
-        </div>
-        <div class="contact-block">
-          <span>Phone</span>
-          <a href="tel:+919004694015">+91 90046 94015</a>
-        </div>
-        <div class="contact-block">
-          <span>Location</span>
-          <p>Mumbai, India</p>
-        </div>
+        <div class="contact-block"><span>Email</span><a href="mailto:jayesh10042003@gmail.com">jayesh10042003@gmail.com</a></div>
+        <div class="contact-block"><span>Phone</span><a href="tel:+919004694015">+91 90046 94015</a></div>
+        <div class="contact-block"><span>Location</span><p>Mumbai, India</p></div>
 
         <div class="profile-links" aria-label="Professional and social profiles">
           <a href="https://www.linkedin.com/in/jayeshjadhaviitbphysics" target="_blank" rel="noreferrer"><span>LinkedIn</span><small>Professional profile</small><b>↗</b></a>
@@ -53,22 +46,12 @@
         <form id="contact-form">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
-
           <label for="organization">Organization / University</label>
           <input id="organization" name="organization" type="text" autocomplete="organization" placeholder="Your institution">
-
           <label for="subject">Subject</label>
-          <select id="subject" name="subject">
-            <option>Research collaboration</option>
-            <option>PhD opportunity</option>
-            <option>Research position</option>
-            <option>Academic discussion</option>
-            <option>Other</option>
-          </select>
-
+          <select id="subject" name="subject"><option>Research collaboration</option><option>PhD opportunity</option><option>Research position</option><option>Academic discussion</option><option>Other</option></select>
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="7" placeholder="Briefly describe the purpose of your enquiry..." required></textarea>
-
+          <textarea id="message" name="message" rows="5" placeholder="Briefly describe the purpose of your enquiry..." required></textarea>
           <button class="button button-primary" type="submit">Open email draft</button>
           <p class="form-note" id="form-note">This form opens your email app with the message prepared; it does not send anything automatically.</p>
         </form>
