@@ -7,7 +7,9 @@
   <meta name="theme-color" content="#0b0e12">
   <title>Research — Jayesh Jadhav</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="single-screen.css">
   <script defer src="app.js"></script>
+  <script defer src="single-screen.js"></script>
 </head>
 <body data-page="research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,28 +23,14 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="page-hero shell research-page-hero">
-      <div>
-        <p class="eyebrow">Research archive · 2023—2026</p>
-        <h1>Research</h1>
-      </div>
-      <div class="page-hero-copy">
-        <p>Experimental materials physics, thin-film photonics, extreme-condition spectroscopy and an emerging direction in quantum-device nanofabrication.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://jayeshofphysics.github.io/JayeshJadhav/Assets/RESUME.pdf" target="_blank" rel="noopener noreferrer">View CV ↗</a>
-          <a class="button" href="https://jayeshofphysics.github.io/JayeshJadhav/Assets/ThesisReport.pdf" target="_blank" rel="noopener noreferrer">Thesis PDF ↗</a>
+  <main id="main" class="screen-main">
+    <section class="shell screen-board" aria-labelledby="research-title">
+      <div class="screen-heading">
+        <div class="screen-heading-left">
+          <p class="eyebrow">01 / Research projects · 2023—2026</p>
+          <h1 id="research-title">Selected work</h1>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-bordered research-gallery-section">
-      <div class="shell">
-        <div class="research-toolbar" aria-label="Research filters">
-          <div>
-            <p class="section-index">01 / Research projects</p>
-            <h2>Selected work</h2>
-          </div>
+        <div class="research-toolbar-compact">
           <div class="filter-row" role="group" aria-label="Filter research projects">
             <button class="filter-button active" type="button" data-filter="all">All</button>
             <button class="filter-button" type="button" data-filter="optics">Optics</button>
@@ -50,139 +38,135 @@
             <button class="filter-button" type="button" data-filter="nanofab">Nanofabrication</button>
             <button class="filter-button" type="button" data-filter="materials">Materials &amp; systems</button>
           </div>
-        </div>
-
-        <div class="research-grid" id="research-grid">
-          <article class="research-card research-card-featured" data-category="optics materials">
-            <a class="research-media" href="thesis-report.html">
-              <img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/thesis-optics.svg" alt="Thin-film optics illustration showing an IZO silver IZO multilayer">
-            </a>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>2024—2026</span><span>NCPRE · IIT Bombay</span></div>
-              <h3><a href="thesis-report.html">Simulation and Optical Design of Multilayer Transparent Conducting Oxides</a></h3>
-              <p>Investigated IZO/Ag/IZO oxide–metal–oxide electrodes, with emphasis on thin-film interference, ultrathin-silver optical behaviour, photon-flux limits and the distinction between ideal simulation and fabricated-device behaviour.</p>
-              <div class="tag-list"><span>SETFOS</span><span>Python</span><span>Thin-film optics</span><span>RF sputtering</span><span>Metal evaporation</span><span>UV–Vis–NIR</span></div>
-              <a class="text-link" href="thesis-report.html">Open case study →</a>
-            </div>
-          </article>
-
-          <article class="research-card" id="quantum" data-category="nanofab">
-            <div class="research-media type-media quantum-media" aria-hidden="true"><span>NQM</span><i></i><i></i><i></i><i></i></div>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Incoming · 2026</span><span>National Quantum Mission</span></div>
-              <h3>Quantum Nanofabrication Researcher</h3>
-              <p>Joining a National Quantum Mission nanofabrication laboratory. The detailed assignment is being finalised, with the broader direction connected to fabrication processes for quantum-computing hardware.</p>
-              <div class="tag-list"><span>Quantum devices</span><span>Nanofabrication</span><span>Cleanroom</span></div>
-            </div>
-          </article>
-
-          <article class="research-card" data-category="spectroscopy materials">
-            <a class="research-media type-media raman-media" href="barc-report.html" aria-label="Open BARC high-pressure Raman case study">
-              <span>Na₂Cu₂TeO₆</span><i></i><b>532 nm · ≈12 GPa</b>
-            </a>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>May—Jul 2025</span><span>BARC · HP&amp;SRPD</span></div>
-              <h3><a href="barc-report.html">High-pressure Raman spectroscopy</a></h3>
-              <p>Investigated Na₂Cu₂TeO₆ using diamond anvil cells and a 532 nm Raman setup, with pressure-dependent measurements extending to approximately 12 GPa.</p>
-              <div class="tag-list"><span>Raman</span><span>Diamond anvil cell</span><span>High pressure</span></div>
-              <a class="text-link" href="barc-report.html">Open case study →</a>
-            </div>
-          </article>
-
-          <article class="research-card" data-category="spectroscopy materials">
-            <div class="research-media type-media xrd-media" aria-hidden="true"><span>INDUS-II</span><i></i><b>Extreme Condition XRD</b></div>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Jun—Jul 2025</span><span>RRCAT · Indore</span></div>
-              <h3>Extreme-condition synchrotron XRD</h3>
-              <p>Participated as a BARC team member in a seven-day experimental campaign at the Extreme Condition XRD Beamline, completing safety training and contributing to high-pressure measurements.</p>
-              <div class="tag-list"><span>Synchrotron</span><span>HP-XRD</span><span>Beamline</span></div>
-            </div>
-          </article>
-
-          <article class="research-card" data-category="materials">
-            <div class="research-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/pani.jpg" alt="Polyaniline synthesis setup for the PANI and Fe3O4 EMI shielding composite project"></div>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Materials project</span><span>Electromagnetism</span></div>
-              <h3>PANI/Fe₃O₄ EMI Shielding Composite</h3>
-              <p>Synthesised magnetite and an in-situ polyaniline composite, connecting FESEM, XRD and FTIR characterization with VNA shielding measurements.</p>
-              <div class="tag-list"><span>Polyaniline</span><span>Fe₃O₄</span><span>FESEM</span><span>XRD</span><span>FTIR</span><span>VNA</span></div>
-            </div>
-          </article>
-
-          <article class="research-card" data-category="materials">
-            <div class="research-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/Hydrogencell.jpg" alt="Laboratory work for the microbial fuel cell and hydrogen production project"></div>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Experimental energy</span><span>Project</span></div>
-              <h3>Microbial Fuel Cell / Hydrogen Project</h3>
-              <p>Worked on assembly and chemical preparation for a bio-waste-based microbial fuel-cell project exploring hydrogen production.</p>
-              <div class="tag-list"><span>Energy</span><span>Experimental project</span></div>
-            </div>
-          </article>
-
-          <article class="research-card" data-category="materials">
-            <div class="research-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/randomValue.jpg" alt="Breadboard prototype of the random light and sound signal generator"></div>
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Electronics</span><span>Instrument design</span></div>
-              <h3>Random Signal Generator</h3>
-              <p>Designed a non-microprocessor light-and-sound random signal generator as an electronics project for rural animal deterrence.</p>
-              <div class="tag-list"><span>Electronics</span><span>Hardware</span></div>
-            </div>
-          </article>
-
-          <article class="research-card text-only-card" data-category="materials">
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Scientific communication</span><span>Design</span></div>
-              <h3>Scientific Vector Diagrams</h3>
-              <p>Created scientific diagrams for colleagues' thesis projects using Adobe Illustrator and Affinity Designer.</p>
-              <div class="tag-list"><span>Illustrator</span><span>Affinity Designer</span><span>Scientific visualization</span></div>
-            </div>
-          </article>
-
-          <article class="research-card text-only-card" data-category="materials">
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Leadership</span><span>Community</span></div>
-              <h3>Incredible 8</h3>
-              <p>Led an eight-person departmental team in a multi-phase community support project during the coronavirus period.</p>
-              <div class="tag-list"><span>Leadership</span><span>Coordination</span></div>
-            </div>
-          </article>
-
-          <article class="research-card text-only-card" data-category="materials">
-            <div class="research-card-copy">
-              <div class="card-meta"><span>Web &amp; leadership</span><span>IIT Bombay</span></div>
-              <h3>IIT Bombay Physics Fresher Guide</h3>
-              <p>Designed a digital guide for incoming M.Sc. Physics students, combining information architecture, web design and student coordination.</p>
-              <div class="tag-list"><span>Web design</span><span>Information architecture</span><span>Leadership</span></div>
-            </div>
-          </article>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://jayeshofphysics.github.io/JayeshJadhav/Assets/RESUME.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a>
+            <a class="button" href="https://jayeshofphysics.github.io/JayeshJadhav/Assets/ThesisReport.pdf" target="_blank" rel="noopener noreferrer">Thesis ↗</a>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="shell two-column-section">
-        <div>
-          <p class="section-index">02 / Academic development</p>
-          <h2>Conferences, workshops &amp; leadership</h2>
-        </div>
-        <div class="timeline-list">
-          <article><time>2026</time><div><p class="institution">International workshop · IIT Bombay</p><h3>Semiconductor Epitaxy &amp; Devices for Quantum Technologies</h3><p>Focused exposure to semiconductor epitaxy, device structures and material platforms relevant to emerging quantum technologies.</p></div></article>
-          <article><time>2025</time><div><p class="institution">Summer school · IIT Delhi</p><h3>Summer School on Optics &amp; Photonics</h3><p>Attended focused training covering optics and photonics, strengthening the connection between my thin-film work and broader light–matter interaction problems.</p></div></article>
-          <article><time>2024—2026</time><div><p class="institution">Academic leadership · IIT Bombay</p><h3>M.Sc. Representative and Class Representative</h3><p>Led and represented two M.Sc. Physics batches, coordinated academic and student matters, and supported department-level activities.</p></div></article>
-          <article><time>2024</time><div><p class="institution">Academic &amp; photography recognition</p><h3>IIT JAM AIR 84 · Inter IIT 7.0 · PG-Cult</h3><p>Secured IIT JAM All India Rank 84, placed 5th as a member of the IIT Bombay photography team at Inter IIT 7.0, and won 3rd prize in a PG-Cult photography competition.</p></div></article>
-          <article><time>2023</time><div><p class="institution">Conference &amp; workshop</p><h3>RAFAS 2023 and Testing Aspects of General Relativity</h3><p>Attended the Fourth International Conference on Recent Advances in Fundamental and Applied Sciences and an online workshop on Testing Aspects of General Relativity organised by IIT Gandhinagar.</p></div></article>
-        </div>
+      <div class="research-screen-grid" id="research-grid">
+        <article class="research-screen-card featured" data-category="optics materials">
+          <a class="research-screen-media" href="thesis-report.html" aria-label="Open M.Sc. thesis case study">
+            <img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/thesis-optics.svg" alt="Thin-film optics illustration showing an IZO silver IZO multilayer">
+          </a>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>2024—2026</span><span>NCPRE · IIT Bombay</span></div>
+            <h3><a href="thesis-report.html">Simulation and Optical Design of Multilayer Transparent Conducting Oxides</a></h3>
+            <p>Investigated IZO/Ag/IZO oxide–metal–oxide electrodes with SETFOS and Python, connecting thin-film interference, ultrathin-silver optical behaviour, photon-flux/current limits, Drude-model interpretation and the difference between ideal simulation and fabricated-device behaviour.</p>
+            <div class="tag-list"><span>SETFOS</span><span>Python</span><span>Thin-film optics</span><span>RF sputtering</span><span>Metal evaporation</span><span>UV–Vis–NIR</span></div>
+            <a class="text-link" href="thesis-report.html">Open case study →</a>
+          </div>
+        </article>
+
+        <article class="research-screen-card" id="quantum" data-category="nanofab">
+          <div class="research-screen-media type-media quantum-media" aria-hidden="true"><span>NQM</span><i></i><i></i><i></i><i></i></div>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Incoming · 2026</span><span>National Quantum Mission</span></div>
+            <h3>Quantum Nanofabrication Researcher</h3>
+            <p>Joining a nanofabrication laboratory connected to fabrication processes for quantum-computing hardware.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card" data-category="spectroscopy materials">
+          <a class="research-screen-media type-media raman-media" href="barc-report.html" aria-label="Open BARC high-pressure Raman case study"><span>Na₂Cu₂TeO₆</span><b>532 nm · ≈12 GPa</b></a>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>May—Jul 2025</span><span>BARC · HP&amp;SRPD</span></div>
+            <h3><a href="barc-report.html">High-pressure Raman spectroscopy</a></h3>
+            <p>Diamond-anvil-cell Raman measurements of Na₂Cu₂TeO₆ extending to approximately 12 GPa.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card" data-category="spectroscopy materials">
+          <div class="research-screen-media type-media xrd-media" aria-hidden="true"><span>INDUS-II</span><b>Extreme Condition XRD</b></div>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Jun—Jul 2025</span><span>RRCAT · Indore</span></div>
+            <h3>Extreme-condition synchrotron XRD</h3>
+            <p>Seven-day BARC team campaign at the Extreme Condition XRD Beamline with high-pressure measurements.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card" data-category="materials">
+          <div class="research-screen-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/pani.jpg" alt="Polyaniline synthesis setup for the PANI and Fe3O4 EMI shielding composite project"></div>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Materials</span><span>Electromagnetism</span></div>
+            <h3>PANI/Fe₃O₄ EMI Shielding Composite</h3>
+            <p>Magnetite synthesis and in-situ polyaniline composite; FESEM, XRD, FTIR and VNA shielding measurements.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card" data-category="materials">
+          <div class="research-screen-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/Hydrogencell.jpg" alt="Laboratory work for the microbial fuel cell and hydrogen production project"></div>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Experimental energy</span><span>Project</span></div>
+            <h3>Microbial Fuel Cell / Hydrogen Project</h3>
+            <p>Assembly and chemical preparation for a bio-waste-based microbial fuel-cell project exploring hydrogen production.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card" data-category="materials">
+          <div class="research-screen-media"><img src="https://jayeshofphysics.github.io/JayeshJadhav/assets/research/randomValue.jpg" alt="Breadboard prototype of the random light and sound signal generator"></div>
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Electronics</span><span>Instrument design</span></div>
+            <h3>Random Signal Generator</h3>
+            <p>Non-microprocessor light-and-sound random signal generator for rural animal deterrence.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card wide" data-category="materials">
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Scientific communication</span><span>Design</span></div>
+            <h3>Scientific Vector Diagrams</h3>
+            <p>Scientific diagrams for colleagues’ thesis projects using Adobe Illustrator and Affinity Designer.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card" data-category="materials">
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Leadership</span><span>Community</span></div>
+            <h3>Incredible 8</h3>
+            <p>Led an eight-person departmental team in a multi-phase community support project during the coronavirus period.</p>
+          </div>
+        </article>
+
+        <article class="research-screen-card wide" data-category="materials">
+          <div class="research-screen-copy">
+            <div class="research-screen-meta"><span>Web &amp; leadership</span><span>IIT Bombay</span></div>
+            <h3>IIT Bombay Physics Fresher Guide</h3>
+            <p>Designed a digital guide for incoming M.Sc. Physics students, combining information architecture, web design and student coordination.</p>
+          </div>
+        </article>
       </div>
-    </section>
 
-    <section class="section section-bordered">
-      <div class="shell">
-        <div class="section-title-row"><div><p class="section-index">03 / Skills</p><h2>Experimental toolkit</h2></div></div>
-        <div class="skills-grid">
-          <article><span>Fabrication</span><h3>RF magnetron sputtering, metal evaporation, cleanroom workflow and vacuum handling.</h3></article>
-          <article><span>Characterization</span><h3>UV–Vis–NIR, Raman spectroscopy, four-point probe, profilometry and XRD exposure.</h3></article>
-          <article><span>Modelling</span><h3>SETFOS, Drude-model interpretation, photon-flux calculations and multilayer optics.</h3></article>
-          <article><span>Tools</span><h3>Python, Adobe Illustrator, Affinity Designer and scientific data visualization.</h3></article>
+      <div class="screen-bottom-bar">
+        <p class="screen-bottom-note">All principal projects are visible together. Deeper academic-development and skills information opens without leaving the page.</p>
+        <div class="research-detail-actions">
+          <details class="screen-detail">
+            <summary>Academic development <span>5 items</span></summary>
+            <div class="screen-overlay" role="region" aria-label="Academic development details">
+              <div class="screen-overlay-head"><h2>Conferences, workshops &amp; leadership</h2><button class="screen-overlay-close" type="button">Close</button></div>
+              <div class="compact-info-grid">
+                <article><time>2026</time><h3>Semiconductor Epitaxy &amp; Devices for Quantum Technologies</h3><p>International workshop at IIT Bombay focused on semiconductor epitaxy, device structures and material platforms relevant to emerging quantum technologies.</p></article>
+                <article><time>2025</time><h3>Summer School on Optics &amp; Photonics</h3><p>Focused training at IIT Delhi covering optics and photonics and strengthening the connection between thin-film work and broader light–matter interaction problems.</p></article>
+                <article><time>2024—2026</time><h3>M.Sc. Representative and Class Representative</h3><p>Led and represented two M.Sc. Physics batches, coordinated academic and student matters, and supported department-level activities.</p></article>
+                <article><time>2024</time><h3>IIT JAM AIR 84 · Inter IIT 7.0 · PG-Cult</h3><p>Secured IIT JAM All India Rank 84, placed 5th with the IIT Bombay photography team at Inter IIT 7.0, and won 3rd prize in PG-Cult photography.</p></article>
+                <article><time>2023</time><h3>RAFAS 2023 · Testing Aspects of General Relativity</h3><p>Attended the Fourth International Conference on Recent Advances in Fundamental and Applied Sciences and an IIT Gandhinagar workshop on testing general relativity.</p></article>
+              </div>
+            </div>
+          </details>
+
+          <details class="screen-detail">
+            <summary>Experimental toolkit <span>4 groups</span></summary>
+            <div class="screen-overlay" role="region" aria-label="Experimental toolkit details">
+              <div class="screen-overlay-head"><h2>Experimental toolkit</h2><button class="screen-overlay-close" type="button">Close</button></div>
+              <div class="skills-inline">
+                <article><span>Fabrication</span><h3>RF magnetron sputtering, metal evaporation, cleanroom workflow and vacuum handling.</h3></article>
+                <article><span>Characterization</span><h3>UV–Vis–NIR, Raman spectroscopy, four-point probe, profilometry and XRD exposure.</h3></article>
+                <article><span>Modelling</span><h3>SETFOS, Drude-model interpretation, photon-flux calculations and multilayer optics.</h3></article>
+                <article><span>Tools</span><h3>Python, Adobe Illustrator, Affinity Designer and scientific data visualization.</h3></article>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
     </section>
